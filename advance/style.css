@@ -1,0 +1,15 @@
+body{
+    background-color: #eee;
+}
+
+.fondo{
+    background-color: green;
+    background-image: url("http://placekitten.com/200/300");
+    /*1.*/background-repeat:no-repeat ;
+    /*2.*/background-position: top right;
+    /*3.*/background-attachment: fixed ;
+    /*SHORT VERSION*/
+    /*background: green url() no-repeat top right fixed;
+    BKG-S NO SE PUEDE INCLUIR EN SHORT VERSION*/
+    /*3.*/background-size: cover;
+}

@@ -1,0 +1,67 @@
+ /*ASIGNACION DE NOMBRE A LAS LINEAS DE LA GRILLA*/
+html{
+    height: 100%;
+}
+
+ body{
+    background-color: #eee;
+    height: 100%;
+}
+/*LE07*/
+/* AVECES HAY COLUMNAS O  FIALS REPETITIVAS
+A LAS CUALES QUERREMOS PONERLES EL MISMO NOMBRE,
+                                    inicio ------ fin
+PARA ESTO USAREMOS REPEAT(CANTIDAD, NOMBRE TAMAÑO [SI ES 
+NECESARIO OTRO NOMBRE])
+*/
+/*LE08*/
+/*OTRA FORMA DE DISTRIBUIR LA GRILLA
+MANERA DECLARATIVA CON TEMPLATE-AREAS*/
+/*LES09*/
+/*CONFIGURACION DE TODO AQUELLO QUE NO DEFINIMOS
+EPLICITAMENTE COMO CON EL COMANDO TEMPLATE-AREAS(EXPLICITO)
+SINO CON AUTO(IMPLICITO)*/
+/*LE10*/
+/*JUSTIFI ITEMS ES CAPAS DE POSICIONAR ALGO
+VERTICALMENTE Y ALIGN ITEMS ES CAPAZ DE
+POSICIONAR ALGO HORIZONALTAMENTE YA SEA START AL INICIO
+END ABAJO, CENTER EN EL CENTRO*/
+/*LE11*/
+/*PARA JUSTIFICAR UN SOLO ITEM SE NECESITA PRIMERO, SELECCIONAR
+EL ITEM CON ID O CLASS Y LUEGO USAR JSUTIFI-SELF PARA HORIZONTAL
+Y ALIGN-SELF, CASO CONTRARIO CON LOS ANTERIORES, SE JUSTIFICABAN
+TODOS LOS ITEMS YA SEA HORIZONAL O VERTICAL */
+/*le12 - ALINEACION DE GRID GENERAL Y NO DE 
+SU CONTENIDO*/
+/*PARA ALINEAR TODA LA GRILLA USAREMOS GRID
+CONTENT, DE ESTA MAERA PODREMOS USAR LA ALINEACION
+VERTICAL U HORIZONTAL DE ESTA, ADEMAS SEA COPLARA
+AL ELEMENTO PADRE*/
+.grid{
+    display: grid;
+    /*con el comando teplate generamos una plantilla a esta le podremos
+    poner repeat si queremos que el formato se repita paraciertas columans o podremos
+    asignarles un nombre y un tamaño*/
+    width: 100%;
+    height: 100%;
+    grid-template-rows: repeat(4 , 50px);
+    grid-template-columns: repeat(4,50px);
+    grid-gap: 5px;
+    justify-content: space-around ;
+    /*sapce-between, space-evenly*/
+    align-content: center ;
+
+    /*gap es el espacio entre cada div
+    este podra hacerse entre filas, columnas segun
+    la etiqueta que eligas o todo almismo tiempo solo con gap
+    */
+    /*FORMATO REPEAT(CANTIDAD,TAMAÑO)
+    EJEMPLO:
+    REPEAT(4,1FR) SE REPITE 4 VECES CON UN TAMAÑO DE UN
+    FRACCION CADA UNA;*/
+    /*grid-gap: 15px;*/
+}
+.red{
+    background-color: red;
+}
+

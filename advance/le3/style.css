@@ -1,0 +1,13 @@
+body{
+    background-color: #eee;
+}
+
+.fondo{
+    /*SI QUEREMOS USAR GRADIENTES DEBESMOS USAR
+    BACKGROUND-IMAGE*/
+   background-image: repeating-linear-gradient(red 10%,blue 20%); 
+}
+.fondo ul{
+    padding-left: 0px;
+    list-style: none;
+}

@@ -1,0 +1,18 @@
+body{
+    background-color: #eee;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px) ;
+    /*gap es el espacio entre cada div
+    este podra hacerse entre filas, columnas segun
+    la etiqueta que eligas o todo almismo tiempo solo con gap
+    */
+    grid-row-gap: 2px;
+}
+.element{
+    padding-top: 50px;
+    background-color: red;
+    text-align: center;
+}

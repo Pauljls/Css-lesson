@@ -1,0 +1,70 @@
+ /*ASIGNACION DE NOMBRE A LAS LINEAS DE LA GRILLA*/
+
+body{
+    background-color: #eee;
+}
+/*LE07*/
+/* AVECES HAY COLUMNAS O  FIALS REPETITIVAS
+A LAS CUALES QUERREMOS PONERLES EL MISMO NOMBRE,
+                                    inicio ------ fin
+PARA ESTO USAREMOS REPEAT(CANTIDAD, NOMBRE TAMAÑO [SI ES 
+NECESARIO OTRO NOMBRE])
+*/
+/*LE08*/
+/*OTRA FORMA DE DISTRIBUIR LA GRILLA
+MANERA DECLARATIVA CON TEMPLATE-AREAS*/
+/*LES09*/
+/*CONFIGURACION DE TODO AQUELLO QUE NO DEFINIMOS
+EPLICITAMENTE COMO CON EL COMANDO TEMPLATE-AREAS(EXPLICITO)
+SINO CON AUTO(IMPLICITO)*/
+/*LE10*/
+/*JUSTIFI ITEMS ES CAPAS DE POSICIONAR ALGO
+VERTICALMENTE Y ALIGN ITEMS ES CAPAZ DE
+POSICIONAR ALGO HORIZONALTAMENTE YA SEA START AL INICIO
+END ABAJO, CENTER EN EL CENTRO*/
+/*LE11*/
+/*PARA JUSTIFICAR UN SOLO ITEM SE NECESITA PRIMERO, SELECCIONAR
+EL ITEM CON ID O CLASS Y LUEGO USAR JSUTIFI-SELF PARA HORIZONTAL
+Y ALIGN-SELF, CASO CONTRARIO CON LOS ANTERIORES, SE JUSTIFICABAN
+TODOS LOS ITEMS YA SEA HORIZONAL O VERTICAL */
+.grid{
+    display: grid;
+    /*con el comando teplate generamos una plantilla a esta le podremos
+    poner repeat si queremos que el formato se repita paraciertas columans o podremos
+    asignarles un nombre y un tamaño*/
+
+    grid-template-areas: "Header Header"
+                          "Content Slidebar"
+                          "Footer Footer";
+
+    
+    grid-template-rows:150px 1fr 100px ;
+    grid-template-columns: 1fr 200px;
+
+    grid-auto-rows: 140px;
+    grid-auto-flow: row;
+
+    justify-items: stretch;
+    align-items: stretch;
+    /*gap es el espacio entre cada div
+    este podra hacerse entre filas, columnas segun
+    la etiqueta que eligas o todo almismo tiempo solo con gap
+    */
+    /*FORMATO REPEAT(CANTIDAD,TAMAÑO)
+    EJEMPLO:
+    REPEAT(4,1FR) SE REPITE 4 VECES CON UN TAMAÑO DE UN
+    FRACCION CADA UNA;*/
+    /*grid-gap: 15px;*/
+}
+.red{
+    background-color: red;
+}
+.head{
+    grid-column: col-inicio/col-fin 3;
+    grid-row: row-inicio/row-fin 3;
+}
+.item-1{
+    background-color: center;
+    justify-self: center;
+    align-self: center;
+}

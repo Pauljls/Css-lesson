@@ -1,0 +1,60 @@
+*{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: #111;
+    height: 100%;
+}
+.title{
+    width: 100%;
+    color: #eee;
+}
+.flex{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content: center ;
+    align-content: center ;
+}
+.users{
+
+    color: #eee;
+    margin-right: 15px;
+}
+.fig{
+    
+    margin-bottom: 15px;
+}
+.paul{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.diana{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.david{
+    background-color: #262;
+    width: 100px;
+    height: 100px;
+}
+
+.fanny{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+}
+.cristhian{
+    background-color: violet;
+    width: 100px;
+    height: 100px;
+}
